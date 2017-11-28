@@ -2,5 +2,10 @@
 <view class="container">
   <view class='page-body'>
      <view class='block'>test</view>
+     <view class='block'>test</view>
+     <view class='block'>test</view>
+     <view class='block'>test</view>
+     <view class='block'>test</view>
+     <view class='block'>test</view>
   </view>
 </view>
