@@ -1,11 +1,14 @@
 <!--index.wxml-->
 <view class="container">
+  <view class='page-head'>
+    <view class='head-item identity'>
+      <text>乘客</text>
+    </view>
+    <view class='head-item logo'>
+    <text>DiDaDi 嘀嗒嘀</text>
+    </view>
+  </view>
   <view class='page-body'>
-     <view class='block'>test</view>
-     <view class='block'>test</view>
-     <view class='block'>test</view>
-     <view class='block'>test</view>
-     <view class='block'>test</view>
-     <view class='block'>test</view>
+    
   </view>
 </view>
