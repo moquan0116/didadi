@@ -2,7 +2,8 @@
 <view class="container">
   <view class='page-head'>
     <view class='head-item identity'>
-      <text>乘客</text>
+      <text class='iden-item'>乘客</text>
+      <image class='iden-item'  mode='aspectFit' src='{{src}}'></image>
     </view>
     <view class='head-item logo'>
     <text>DiDaDi 嘀嗒嘀</text>
