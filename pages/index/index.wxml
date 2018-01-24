@@ -19,9 +19,14 @@
   
   <!--内容-->
   <view class='page-body'>
-    <!--<view wx:for="{{itemList}}">
-      {{index}}:{{item.name}}
-    </view>-->
+    <view class="section nav" style='position:absolute;left:0;bottom:0;'>
+      <view class="flex-wrp">
+        <view class="flex-item bc_green">首页</view>
+        <view class="flex-item bc_red">行程</view>
+        <view class="flex-item bc_blue">圈子</view>
+        <view class="flex-item bc_blue">我</view>
+      </view>
+    </view>
   </view>
   <!--<template is="foot" />-->
 </view>

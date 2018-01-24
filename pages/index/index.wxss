@@ -53,3 +53,20 @@ map{
   height: 100vh;
   z-index: -1;
 }
+
+
+.nav{
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}
+.flex-wrp{
+  display: flex;
+  flex-direction: row;
+  background: #fff;
+}
+.flex-item{
+  width: 190rpx;
+  padding: 20rpx 0;
+  text-align: center;
+}
