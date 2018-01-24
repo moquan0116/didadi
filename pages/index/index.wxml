@@ -1,15 +1,27 @@
+<import src="../../common/foot.wxml" />
 <!--index.wxml-->
 <view class="container">
+<!--地图-->
+<map id="map" longitude="113.324520" latitude="23.099994" scale="14" controls="{{controls}}" bindcontroltap="controltap" markers="{{markers}}" bindmarkertap="markertap" polyline="{{polyline}}" bindregionchange="regionchange" show-location style="width: 100%; height: 600px;"></map>
+  
+  <!--头部-->
   <view class='page-head'>
-    <view class='head-item identity'>
-      <text class='iden-item'>乘客</text>
+    <view class='head-item identity' bindtap='actionSheetTap'>
+      <block wx:for="{{actionSheetItems}}">
+        <text wx:if="{{index == temp}}" class='iden-item test'>{{item}}</text>
+      </block>
       <image class='iden-item'  mode='aspectFit' src='{{src}}'></image>
     </view>
     <view class='head-item logo'>
     <text>DiDaDi 嘀嗒嘀</text>
     </view>
   </view>
+  
+  <!--内容-->
   <view class='page-body'>
-    
+    <!--<view wx:for="{{itemList}}">
+      {{index}}:{{item.name}}
+    </view>-->
   </view>
+  <!--<template is="foot" />-->
 </view>

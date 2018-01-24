@@ -1,6 +1,7 @@
 //index.js
 //获取应用实例
 const app = getApp()
+var items = ['乘客', '车主'];
 
 Page({
   data: {
@@ -9,7 +10,25 @@ Page({
     hasUserInfo: false,
     canIUse: wx.canIUse('button.open-type.getUserInfo'),
     mode:'top left',
-    src:'../../images/icon-iden.png'
+    src:'../../images/icon-iden.png',
+    itemList: items,
+    actionSheetItems:items,
+    temp:1
+  },
+  triggerIdet:function(){
+    console.log('aa');
+  },
+  actionSheetTap: function () {
+    var _this = this;
+    wx.showActionSheet({
+      itemList: items,
+      success: function (e) {
+        _this.setData({'temp':e.tapIndex});
+      },
+      fail: function (res) {
+        console.log(res.errMsg)
+      }
+    })
   },
   //事件处理函数
   bindViewTap: function() {

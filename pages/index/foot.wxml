@@ -1,0 +1,3 @@
+<template name="foot">
+  <view>这是底部</view>
+</template>
