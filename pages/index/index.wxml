@@ -1,32 +1,18 @@
-<import src="../../common/foot.wxml" />
+<import src="../common/header.wxml"/>
+
 <!--index.wxml-->
 <view class="container">
 <!--地图-->
-<map id="map" longitude="113.324520" latitude="23.099994" scale="14" controls="{{controls}}" bindcontroltap="controltap" markers="{{markers}}" bindmarkertap="markertap" polyline="{{polyline}}" bindregionchange="regionchange" show-location style="width: 100%; height: 600px;"></map>
+
   
   <!--头部-->
-  <view class='page-head'>
-    <view class='head-item identity' bindtap='actionSheetTap'>
-      <block wx:for="{{actionSheetItems}}">
-        <text wx:if="{{index == temp}}" class='iden-item test'>{{item}}</text>
-      </block>
-      <image class='iden-item'  mode='aspectFit' src='{{src}}'></image>
-    </view>
-    <view class='head-item logo'>
-    <text>DiDaDi 嘀嗒嘀</text>
-    </view>
-  </view>
+  <template is="header" data="{{actionSheetItems,temp,src}}"  />
   
   <!--内容-->
   <view class='page-body'>
-    <view class="section nav" style='position:absolute;left:0;bottom:0;'>
-      <view class="flex-wrp">
-        <view class="flex-item bc_green">首页</view>
-        <view class="flex-item bc_red">行程</view>
-        <view class="flex-item bc_blue">圈子</view>
-        <view class="flex-item bc_blue">我</view>
-      </view>
-    </view>
+   
   </view>
-  <!--<template is="foot" />-->
+  <map id="map" longitude="{{longitude}}" latitude="{{latitude}}" scale="14" controls="{{controls}}" bindcontroltap="controltap" markers="{{markers}}" bindmarkertap="markertap" polyline="{{polyline}}" bindregionchange="regionchange" show-location></map>
+
 </view>
+

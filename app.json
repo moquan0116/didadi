@@ -1,12 +1,53 @@
 {
   "pages":[
     "pages/index/index",
-    "pages/logs/logs"
+    "pages/logs/logs",
+    "pages/common"
   ],
   "window":{
     "backgroundTextStyle":"light",
     "navigationBarBackgroundColor": "#fff",
     "navigationBarTitleText": "WeChat",
     "navigationBarTextStyle":"black"
-  }
+  },
+  "tabBar": {
+    "color": "#7A7E83",
+    "selectedColor": "#3cc51f",
+    "borderStyle": "black",
+    "backgroundColor": "#ffffff",
+    "position":"bottom",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "iconPath": "images/my/shou.png",
+        "selectedIconPath": "images/my/shou_sd.png",
+        "text": "首页"
+      },
+      {
+        "pagePath": "pages/index/index",
+        "iconPath": "images/my/xing.png",
+        "selectedIconPath": "images/my/xing_sd.png",
+        "text": "行程"
+      },
+      {
+        "pagePath": "pages/index/index",
+        "iconPath": "images/my/quan.png",
+        "selectedIconPath": "images/my/quan_sd.png",
+        "text": "圈子"
+      },
+      {
+        "pagePath": "pages/index/index",
+        "iconPath": "images/my/wo.png",
+        "selectedIconPath": "images/my/wo_sd.png",
+        "text": "我"
+      }
+    ]
+  },
+  "networkTimeout": {
+    "request": 10000,
+    "connectSocket": 10000,
+    "uploadFile": 10000,
+    "downloadFile": 10000
+  },
+  "debug": false
 }

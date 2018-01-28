@@ -1,0 +1,13 @@
+ <template name="header">
+  <view class='page-head'>
+        <view class='head-item identity' bindtap='actionSheetTap'>
+          <block wx:for="{{actionSheetItems}}" wx:key="this">
+            <text wx:if="{{index == temp}}"  class='iden-item test'>{{item}}</text>
+          </block>
+          <image class='iden-item'  mode='aspectFit' src='{{src}}'></image>
+        </view>
+        <view class='head-item logo'>
+        <text>DiDaDi 嘀嗒嘀</text>
+        </view>
+    </view>
+  </template>

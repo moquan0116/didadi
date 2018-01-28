@@ -13,7 +13,22 @@ Page({
     src:'../../images/icon-iden.png',
     itemList: items,
     actionSheetItems:items,
-    temp:1
+    temp:0,
+    product1: [{
+      index: 0,
+      msg: 'this is a template',
+      time: '217-09-15'
+    }, {
+      index: 1,
+      msg: 'this is a template',
+      time: '2020-09-15'
+    }, {
+      index: 2,
+      msg: 'this is a template',
+      time: '2018-09-15'
+    },],
+    latitude:{},
+    longitude:{}
   },
   triggerIdet:function(){
     console.log('aa');
@@ -24,6 +39,7 @@ Page({
       itemList: items,
       success: function (e) {
         _this.setData({'temp':e.tapIndex});
+        console.log(e.tapIndex);
       },
       fail: function (res) {
         console.log(res.errMsg)
@@ -63,6 +79,18 @@ Page({
         }
       })
     }
+
+    wx.getLocation({
+      type: 'wgs84',
+      success: (res) => {
+        var latitude = res.latitude // 经度
+        var longitude = res.longitude // 纬度
+        this.setData({
+          latitude: latitude,
+          longitude: longitude
+        })
+      }
+    })
   },
   getUserInfo: function(e) {
     console.log(e)

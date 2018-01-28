@@ -1,0 +1,15 @@
+<import src="../../common/foot.wxml" />
+<!--index.wxml-->
+<view class="container">
+<!--地图-->
+
+  
+  <!--头部-->
+  
+  
+  <!--内容-->
+  <view class='page-body'>
+   
+  </view>
+  
+</view>

@@ -1,3 +1,8 @@
 <template name="foot">
-  <view>这是底部</view>
+<block wx:for="{{product1}}" wx:for-item="item" wx:key="pro">
+  <view>
+    <text> {{item.index}}: {{item.msg}} </text>
+    <text> Time: {{item.time}} </text>
+  </view>
+  </block>
 </template>
