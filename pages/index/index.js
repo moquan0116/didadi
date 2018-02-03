@@ -14,6 +14,7 @@ Page({
     itemList: items,
     actionSheetItems:items,
     temp:0,
+    _num:1,
     product1: [{
       index: 0,
       msg: 'this is a template',
@@ -45,6 +46,12 @@ Page({
         console.log(res.errMsg)
       }
     })
+  },
+  choiceType:function(e){
+    console.log(e.currentTarget.dataset.num)
+    this.setData({
+      _num: e.currentTarget.dataset.num
+    }) 
   },
   //事件处理函数
   bindViewTap: function() {

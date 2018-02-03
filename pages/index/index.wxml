@@ -8,11 +8,24 @@
   <!--头部-->
   <template is="header" data="{{actionSheetItems,temp,src}}"  />
   
+  <!--地图-->
+  <map id="map" longitude="{{longitude}}" latitude="{{latitude}}" scale="14" controls="{{controls}}" bindcontroltap="controltap" markers="{{markers}}" bindmarkertap="markertap" polyline="{{polyline}}" bindregionchange="regionchange" show-location></map>
+
   <!--内容-->
   <view class='page-body'>
-   
+     <view class='panel'>
+        <view class='choice'>
+           <view class="cho-item cho-left {{_num == 1?'cho-selected':''}}"  data-num="1" bindtap='choiceType'><text>现在</text></view>
+           <view class="cho-item cho-right {{_num == 2?'cho-selected':''}}" data-num="2" bindtap='choiceType'><text>预约</text></view>
+        </view>
+        <view class='site'>
+          <view class="site-item site-time"><text>预约时间</text></view>
+          <view class="site-item site-start"><text>火车站西广场</text></view>
+          <view class="site-item site-end"><text>你要去哪</text></view>
+        </view>
+     </view>
   </view>
-  <map id="map" longitude="{{longitude}}" latitude="{{latitude}}" scale="14" controls="{{controls}}" bindcontroltap="controltap" markers="{{markers}}" bindmarkertap="markertap" polyline="{{polyline}}" bindregionchange="regionchange" show-location></map>
+  
 
 </view>
 

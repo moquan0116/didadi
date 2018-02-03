@@ -2,12 +2,13 @@
 .page-head{
   display: flex;
   width: 100%;
-  padding: 30rpx 15rpx;
+  padding: 25rpx 15rpx;
   background: #fff;
-  box-shadow: 0rpx 3rpx 5rpx #ccc;
-  margin-bottom: 15rpx;
+  box-shadow: 0rpx 3rpx 1rpx #ccc;
+  margin-bottom: 1rpx;
   align-items: center;
   z-index: 9999;
+  flex-grow: 1;
 }
 .head-item{
   flex-direction: row;
@@ -21,8 +22,8 @@
   margin:0rpx 25rpx; 
   padding-left:40rpx;
   padding-right:30rpx;
-  font-size: 32rpx;
-  font-weight: 300;
+  font-size: 28rpx;
+  font-weight: 500;
   border: 1rpx solid #ccc;
   border-radius: 40rpx;
   box-shadow: 2rpx 2rpx 5rpx #ccc;
@@ -30,10 +31,13 @@
   display: flex;
   flex-direction: row;
   align-items: center;
+  padding: 8rpx 25rpx 8rpx 30rpx;
 }
 
+
+
 .identity image{
-  margin-left: 8rpx;
+  margin-left: 15rpx;
   width: 20rpx;
   height: 50rpx;
 }
@@ -43,13 +47,59 @@
   font-weight: 600;
 }
 .page-body{
-  display: flex;
- 
+  width: 100%;
 }
-
 
 map{
   width: 100%;
-  height: 130vw;
+  height: 85vw;
 }
 
+.panel{
+  padding: 15rpx;
+}
+
+.choice{
+  width: 350rpx;
+  display: flex;
+  flex-direction: row;
+  border-radius: 40rpx;
+  box-shadow: 2rpx 2rpx 5rpx 2rpx #ccc;
+  border: 1px solid #ADABA6;
+  margin-bottom: 12rpx;
+  color: #8F96BC;
+  padding: 8rpx;
+}
+
+.cho-item{
+  height: 55rpx;
+  flex-grow:1;
+  font-size: 26rpx;
+  border-radius: 40rpx;
+  text-align: center;
+  line-height: 55rpx;
+}
+.cho-selected{
+  background: #5677FC;
+  color: #fff;
+}
+
+.site{
+  display: flex;
+  flex-direction: column;
+  font-size: 23rpx;
+  border: 1rpx solid #BBBBBB;
+  padding-bottom: 15rpx; 
+}
+.site-item{
+  height: 60rpx;
+ 
+  line-height: 80rpx;
+  padding: 0 25rpx;
+}
+
+.site-time{
+  text-align: center;
+  line-height: 60rpx;
+  
+}
