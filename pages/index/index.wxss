@@ -1,3 +1,4 @@
+@import "../common/lib/weui.wxss";
 /**index.wxss**/
 .page-head{
   display: flex;
@@ -52,14 +53,16 @@
 
 map{
   width: 100%;
-  height: 85vw;
+  height: 700rpx;
 }
 
 .panel{
-  padding: 15rpx;
+  width: 100%;
+  position: absolute;
+  bottom: 5rpx;
 }
 
-.choice{
+/*.choice{
   width: 350rpx;
   display: flex;
   flex-direction: row;
@@ -72,34 +75,74 @@ map{
 }
 
 .cho-item{
-  height: 55rpx;
+  height: 65rpx;
   flex-grow:1;
   font-size: 26rpx;
   border-radius: 40rpx;
   text-align: center;
-  line-height: 55rpx;
+  line-height: 65rpx;
 }
 .cho-selected{
   background: #5677FC;
   color: #fff;
-}
+}*/
 
 .site{
   display: flex;
   flex-direction: column;
-  font-size: 23rpx;
-  border: 1rpx solid #BBBBBB;
-  padding-bottom: 15rpx; 
+  flex-grow: row wrap;
+  font-size: 26rpx;
+  border-top: 1rpx solid #E8E8E8;
+  box-shadow: 2rpx -2rpx 5rpx #E8E8E8;
+  border-left:none; 
+  border-right:none; 
+  
 }
-.site-item{
-  height: 60rpx;
- 
+.lol .icon{
+  width: 15rpx;
+  height: 15rpx;
+  border-radius: 50%;
+}
+.site-time{
+  height: 80rpx;
+  text-align: center;
   line-height: 80rpx;
-  padding: 0 25rpx;
+  border-bottom: 1rpx solid #E8E8E8;
+  
+}
+.site-time text {
+  margin-left: 12rpx; 
 }
 
-.site-time{
-  text-align: center;
-  line-height: 60rpx;
-  
+.lol{
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 10rpx 25rpx;
+  font-size: 32rpx;
+}
+.lol input{
+  margin-left: 37rpx;
+  width: 90%;
+  height: 65rpx;
+}
+.site .line{
+  background: #fff;
+  width: 85rpx;
+  height: 1rpx;
+  position: relative;
+  left: 0;
+  top:84rpx;
+}
+.site-start{
+  border-bottom:1rpx solid #E8E8E8;
+}
+.site-start .icon{
+  background: #36BBA5;
+}
+.site-end{
+  color: #FA8C48;
+}
+.site-end .icon{
+  background: #FF8B51;
 }

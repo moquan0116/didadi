@@ -14,18 +14,31 @@
   <!--内容-->
   <view class='page-body'>
      <view class='panel'>
-        <view class='choice'>
+        <!--<view class='choice'>
            <view class="cho-item cho-left {{_num == 1?'cho-selected':''}}"  data-num="1" bindtap='choiceType'><text>现在</text></view>
            <view class="cho-item cho-right {{_num == 2?'cho-selected':''}}" data-num="2" bindtap='choiceType'><text>预约</text></view>
-        </view>
+        </view>-->
         <view class='site'>
-          <view class="site-item site-time"><text>预约时间</text></view>
-          <view class="site-item site-start"><text>火车站西广场</text></view>
-          <view class="site-item site-end"><text>你要去哪</text></view>
+          <view class="site-item site-time">
+              <icon type="success" size="13"/>
+              <text>预约时间</text>
+          </view>
+          <view class='line'></view>
+          <view class="site-item lol site-start">
+              <view class='icon'></view>
+              <!--<icon type="success" size="13"/>-->
+              <!--<text>火车站西广场</text>-->
+              <input value='火车站西广场'/>
+          </view>
+          <view class="site-item lol site-end">
+              <view class='icon'></view>
+              <!--<icon type="success" color="yellow" size="13"/>-->
+              <!--<text>你要去哪</text>-->
+              <input value='你要去哪'/>
+          </view>
         </view>
      </view>
   </view>
   
-
 </view>
 
