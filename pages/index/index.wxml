@@ -26,15 +26,11 @@
           <view class='line'></view>
           <view class="site-item lol site-start">
               <view class='icon'></view>
-              <!--<icon type="success" size="13"/>-->
-              <!--<text>火车站西广场</text>-->
-              <input value='火车站西广场'/>
+              <text bindtap='siteStart'>火车站西广场</text>
           </view>
           <view class="site-item lol site-end">
               <view class='icon'></view>
-              <!--<icon type="success" color="yellow" size="13"/>-->
-              <!--<text>你要去哪</text>-->
-              <input value='你要去哪'/>
+              <text bindtap='siteEnd'>你要去哪</text>
           </view>
         </view>
      </view>

@@ -121,11 +121,14 @@ map{
   padding: 10rpx 25rpx;
   font-size: 32rpx;
 }
-.lol input{
+.lol text{
+  display: flex;
+  align-items: center;
   margin-left: 37rpx;
   width: 90%;
   height: 65rpx;
 }
+
 .site .line{
   background: #fff;
   width: 85rpx;

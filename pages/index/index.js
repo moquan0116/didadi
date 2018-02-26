@@ -4,6 +4,12 @@ const app = getApp()
 var items = ['乘客', '车主'];
 
 Page({
+  siteStart:function(e){
+    console.log(e);
+  },
+  siteEnd: function (e) {
+    console.log(e);
+  },
   data: {
     motto: 'Hello World',
     userInfo: {},
